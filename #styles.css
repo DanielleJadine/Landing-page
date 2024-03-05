@@ -1,0 +1,57 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box
+
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.featured-sneaker {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+background-color: #fff;
+}
+
+.featured-sneaker img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.sneaker-details {
+    max-width: 40%;
+}
+
+h1,h2 {
+    color: #333;
+}
+ 
+p {
+color: #666;
+}
+
+/*Responsive design */
+
+@media (max-width:768px) {
+.featured-sneaker{
+    flex-direction: column;
+    text-align: center;
+
+    }
+}
+
+.featured-sneaker img {
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.sneaker-details{
+    max-width: 80%;
+}
