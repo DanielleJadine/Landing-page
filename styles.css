@@ -50,53 +50,137 @@ color: #666;
     margin-top: 20px;
 }
 /*-----signup.html------*/
-.signup-container{
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-}
-
-form#signup-form{
+.form {
     display: flex;
     flex-direction: column;
-}
-.button-group{
-    display:flex;
-    margin-bottom: 15px;
-
-}
-h4{
-    margin-top: 5px;
-}
-
-.form-group{
-    margin-bottom: 15px;
-}
-.form-group label {
-    display: block;
-    color: #1a1a1a;
-}
-.form-group input{
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-.button{
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
     border: none;
-    margin-top: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
     font-size: 16px;
-}
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
 
-.button :hover {
-    background-color: #007bff;
-}
 /*------Shop.html-------*/
 .navbar{
     list-style-type: none;
@@ -148,7 +232,72 @@ h2{
    }
 
    .add-to-cart-btn:hover {
-    background-color: #0056b3;}
+    background-color: #0056b3;
+}
+
+     /*Contact form styles*/
+     .contact-form {
+        padding: 50px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .contact-form h2{
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form label {
+        color: #333;
+        font-weight: bold;
+    
+    }
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8 px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+
+    .contact-form button{
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+    /*Map Section*/
+    .map {
+        padding: 50px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+    .map h2{
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .map iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: 0;
+        margin: 0 auto;
+        display: block;
+    }
+    
  
 /*Responsive design */
 
