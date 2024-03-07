@@ -49,6 +49,50 @@ color: #666;
     border-radius: 5px;
     margin-top: 20px;
 }
+/*-----signup.html------*/
+.signup-container{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+
+form#signup-form{
+    display: flex;
+    flex-direction: column;
+}
+.button-group{
+    display:flex;
+    margin:0;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: #1a1a1a;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button :hover {
+    background-color: #007bff;
+}
 /*------Shop.html-------*/
 .navbar{
     list-style-type: none;
@@ -138,7 +182,7 @@ h2{
 }
 
 footer{
-    background-color:#333;
+        background-color:#333;
     color: #fff;
     text-align: center;
     padding: 10px;
