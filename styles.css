@@ -49,6 +49,45 @@ color: #666;
     border-radius: 5px;
     margin-top: 20px;
 }
+/*-------about.html-------*/
+header{
+  background-color: #000;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+header h1{
+  margin: 0;
+}
+.about-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.about text, .about-image{
+  flex: 1;
+  margin: 10px;
+}
+.about-text{
+  max-width: 600px;
+}
+/.about-image img {
+  max-width: 100%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
 /*-----signup.html------*/
 .form {
     display: flex;
