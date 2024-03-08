@@ -76,7 +76,7 @@ header h1{
   max-width: 600px;
 }
 .about-image {
-  max-width:50;
+  max-width:20;
   height: 30%;
   display: block;
   margin-left: auto;
@@ -192,18 +192,18 @@ header h1{
     color: green;
   }
   
-  .submit {
+  .btn {
     border: none;
     outline: none;
     background-color: royalblue;
     padding: 10px;
     border-radius: 10px;
-    color: #fff;
+    color:#fff;
     font-size: 16px;
     transform: .3s ease;
   }
   
-  .submit:hover {
+  .btn:hover {
     background-color: rgb(56, 90, 194);
   }
   
