@@ -330,10 +330,11 @@ h2{
 
      /*Contact form styles*/
      .contact-form {
-        padding: 50px;
+        padding: 40px;
         background-color: #fff;
-        text-align: center;
+        align-items: center;
     }
+  
     .contact-form h2{
         color: #333;
         margin-bottom: 20px;
