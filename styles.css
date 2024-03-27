@@ -59,20 +59,21 @@ header{
 }
 .featured-sneaker {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-bottom:  15px;
+  padding: 20px;
   background-color: #fff;
   }
   
-  .featured-sneaker img {
-      max-width: 50%;
+  .sneaker-img {
+      max-width: 100%;
       height: auto;
-      margin-right: 20px;
   }
   
   .sneaker-details {
-      max-width: 40%;
+      max-width: 600px;
+      text-align: center;
+      margin-top: 20px ;
   }
   
   h1,h2 {
@@ -419,9 +420,8 @@ footer{
    background-color:#333;
     color: #fff;
     text-align: center;
-    margin-top: auto;
-    text-align: center;
-  padding: 5px;
+    padding: 10px;
+    max-width: 100%;
 }
 
 .social-links {
