@@ -10,7 +10,69 @@ min-height: 100vh;
 }
 
 header {
-    background: color #1a1a1a;
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Add some animation */
+nav li a {
+    position: relative;
+}
+
+nav li a::before,
+nav li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+nav li a::before {
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+nav li a::after {
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+nav li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
+}
     padding: 20px;
     text-align: center;
 }
@@ -44,12 +106,15 @@ color: #666;
 .cta-button {
 
     display: inline-block;
-    background-color: #007bff;
+    background-color: #010101;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+}
+.cta-button:hover {
+background-color: #007bff;
 }
 /*---------home.html----------*/
 header{
@@ -68,6 +133,7 @@ header{
   .sneaker-img {
       max-width: 100%;
       height: auto;
+     
   }
   
   .sneaker-details {
@@ -82,31 +148,99 @@ header{
   
   p {
   color: #666;
+
   }
   
 
-.navbar{
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  text-align: center;
 }
 
-.navbar li{
-  float: left;
+nav li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.navbar li a {
-display: block;
-color: #fff;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
+nav li a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 20px;
+  transition: background-color 0.3s;
 }
 
+nav li a:hover {
+  background-color:#007bff;
+  color: #fff;
+}
 
+/* Add some animation */
+nav li a {
+  position: relative;
+}
+
+nav li a::before,
+nav li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+nav li a::before {
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+nav li a::after {
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+nav li a:hover::before {
+  transform: scaleX(1);
+}
+
+nav li a:hover::after {
+  transform: scaleX(1);
+}
+
+footer{
+  background-color:#333;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   max-width: 100%;
+}
+
+.social-links {
+ margin-top: 20px;
+
+}
+.social-links a {
+ display: inline-block;
+ margin-right: 20px;
+ color: #fff;
+ text-decoration:none;
+ ;
+ 
+}
+
+.social-links a:hover {
+ color: #007bff;
+}
 /*-------about.html-------*/
 header{
   color: #fff;
@@ -139,129 +273,103 @@ header h1{
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 /*-----signup.html------*/
+.form-box {
+  max-width: 300px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+  align-self: center;
+  width: 25rem;
+  margin-bottom:5rem ;
+}
+
 .form {
-   text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+ 
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #010101;
+}
+
+/*Inputs box*/
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+ 
+}
+
+.form-section {
+  padding: 16px;
+  font-size: .85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
   
-  .title {
-    font-size: 28px;
-    color: royalblue;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-  }
+}
+
+.form-section a {
+  font-weight: bold;
+  color:#010101;
+  transition: color .3s ease;
+}
+
+.form-section a:hover {
+  color:#007bff ;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+  background-color:black;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color:#007bff;
+}
+
   
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: royalblue;
-  }
-  
-  .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: royalblue;
-  }
-  
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .message, .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a {
-    color: royalblue;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,.form label .input:valid + span {
-    top: 30px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .form label .input:valid + span {
-    color: green;
-  }
-  
-  .btn {
-    border: none;
-    outline: none;
-    background-color: royalblue;
-    padding: 10px;
-    border-radius: 10px;
-    color:#fff;
-    font-size: 16px;
-    transform: .3s ease;
-  }
-  
-  .btn:hover {
-    background-color: rgb(56, 90, 194);
-  }
+
   
   @keyframes pulse {
     from {
@@ -276,36 +384,14 @@ header h1{
   }
 
 /*------Shop.html-------*/
-.navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navbar li{
-    float: left;
-}
-
-.navbar li a {
-display: block;
-color: #fff;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
-}
-/*Hover effect*/
-.navbar li a :hover{
-    color:#007bff;
-}
+ 
 .active {
     background-color: #007bff;
 }
 h2{
     text-align: center;
 }
+
 .product {
     margin-bottom: 20px;
     text-align: center;
@@ -317,7 +403,7 @@ h2{
    }
 
    .add-to-cart-btn {
-   background-color: #007bff;
+   background-color: #010101;
    color: #fff;
    border: none;
    padding: 10px 20px;
@@ -326,7 +412,7 @@ h2{
    }
 
    .add-to-cart-btn:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
 }
 
      /*Contact form styles*/
@@ -335,9 +421,13 @@ h2{
         background-color: #fff;
         align-items: center;
     }
+    h1{
+      text-align: center;
+      color: #010101;
+    }
   
     .contact-form h2{
-        color: #333;
+        color:#010101;
         margin-bottom: 20px;
     }
     .contact-form form {
@@ -347,7 +437,7 @@ h2{
     }
 
     .contact-form label {
-        color: #333;
+        color: #010101;
         font-weight: bold;
     
     }
@@ -426,12 +516,14 @@ footer{
 
 .social-links {
   margin-top: 20px;
+
 }
 .social-links a {
   display: inline-block;
   margin-right: 20px;
   color: #fff;
   text-decoration:none;
+  ;
   
  }
 
