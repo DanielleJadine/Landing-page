@@ -96,11 +96,11 @@ background-color: #fff;
 }
 
 h1,h2 {
-    color: #333;
+    color: #010101;
 } 
 
 p {
-color: #666;
+color: #010101;
 }
 
 .cta-button {
@@ -143,11 +143,11 @@ header{
   }
   
   h1,h2 {
-      color: #333;
+      color: #010101;
   } 
   
   p {
-  color: #666;
+  color:#010101;
 
   }
   
@@ -218,7 +218,7 @@ nav li a:hover::after {
 }
 
 footer{
-  background-color:#333;
+  background-color:#010101;
    color: #fff;
    text-align: center;
    padding: 10px;
@@ -470,13 +470,13 @@ h2{
         text-align: center;
     }
     .map h2{
-        color: #333;
+        color:#010101;
         margin-bottom: 20px;
     }
 
     .map iframe {
         width: 100%;
-        max-width: 800px;
+        max-width: 600px;
         height: 450px;
         border: 0;
         margin: 0 auto;
