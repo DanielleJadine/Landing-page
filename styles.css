@@ -33,7 +33,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #555;
+    background-color:rgba(255, 123, 0, 0.808) ;
     color: #fff;
 }
 
@@ -114,7 +114,7 @@ color: #010101;
     margin-top: 20px;
 }
 .cta-button:hover {
-background-color: #007bff;
+background-color:rgba(255, 123, 0, 0.808);
 }
 /*---------home.html----------*/
 header{
@@ -176,7 +176,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color:#007bff;
+  background-color:rgba(255, 123, 0, 0.808);
   color: #fff;
 }
 
@@ -234,12 +234,11 @@ footer{
  margin-right: 20px;
  color: #fff;
  text-decoration:none;
- ;
  
 }
 
 .social-links a:hover {
- color: #007bff;
+ color:rgba(255, 123, 0, 0.808) ;
 }
 /*-------about.html-------*/
 header{
@@ -280,7 +279,7 @@ header h1{
 /*-----signup.html------*/
 .form-box {
   max-width: 300px;
-  background: #f1f7fe;
+  background: #555;
   overflow: hidden;
   border-radius: 16px;
   color: #010101;
@@ -303,11 +302,12 @@ header h1{
 .title {
   font-weight: bold;
   font-size: 1.6rem;
+  color: white;
 }
 
 .subtitle {
   font-size: 1rem;
-  color: #010101;
+  color: white;
 }
 
 /*Inputs box*/
@@ -335,19 +335,19 @@ header h1{
 .form-section {
   padding: 16px;
   font-size: .85rem;
-  background-color: #e0ecfb;
-  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+   color: white;
+   box-shadow: rgb(0 0 0 / 8%) 0 -1px;
   
 }
 
 .form-section a {
   font-weight: bold;
-  color:#010101;
+  color:white;
   transition: color .3s ease;
 }
 
 .form-section a:hover {
-  color:#007bff ;
+  color:rgba(255, 123, 0, 0.808) ;
   text-decoration: underline;
 }
 
@@ -365,7 +365,7 @@ header h1{
 }
 
 .form button:hover {
-  background-color:#007bff;
+  background-color:rgba(255, 123, 0, 0.808);
 }
 
   
@@ -386,7 +386,7 @@ header h1{
 /*------Shop.html-------*/
  
 .active {
-    background-color: #007bff;
+    background-color:rgba(255, 123, 0, 0.808) ;
 }
 h2{
     text-align: center;
@@ -412,7 +412,7 @@ h2{
    }
 
    .add-to-cart-btn:hover {
-    background-color: #007bff;
+    background-color:rgba(255, 123, 0, 0.808) ;
 }
 
      /*Contact form styles*/
@@ -453,7 +453,7 @@ h2{
     }
 
     .contact-form button{
-        background-color: #007bff;
+        background-color:rgba(255, 123, 0, 0.808) ;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -461,7 +461,7 @@ h2{
         cursor: pointer;
     }
     .contact-form button:hover {
-        background-color: #0056b3;
+        background-color:rgba(255, 123, 0, 0.808) ;
     }
     /*Map Section*/
     .map {
@@ -528,5 +528,5 @@ footer{
  }
 
 .social-links a:hover {
-  color: #007bff;
+  color:rgba(255, 123, 0, 0.808) ;
 }
